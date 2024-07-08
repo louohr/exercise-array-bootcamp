@@ -65,16 +65,31 @@ let c = a.concat(b); */
 // console.log(c);
 
 /* 8 */
-let a = [1, 2, 3, 7, 8, 9];
+/* Merga in array b på index 3 i array a.. */
+// solution 1
+/* let a = [1, 2, 3, 7, 8, 9];
 let b = [4, 5, 6];
 a.splice(3, 0, ...b);
-/* Merga in array b på index 3 i array a.. */
-console.log(a);
+console.log(a); */
+
+/* a.splice(3, 0, b);
+console.log(c); */
+
+// solution 2
+/* c = c.sort();
+let c = a.concat(b);
+console.log(c); */
 
 /* 9 */
-// let arr = ["a", "b", "c"];
 /* Klona ovanstående array. */
+//let arr = ["a", "b", "c"];
 // console.log(arr.slice());
+
+//let arr = ["a", "b", "c"];
+//let cloneArr = [...arr];
+
+//let cloneArr = arr.concat();
+//console.log(cloneArr);
 
 /* 10 */
 // let fruits = ["kiwi", "apple", "pear"];
@@ -223,6 +238,19 @@ console.log(persons); */
     return 1;
   }
   return 0;
+});
+console.log(persons); */
+
+// solution 3
+/* person.sort((a, b) => {
+  if (a.name < b.name) {
+    return -1;
+  }
+  if (a.name > b.name) {
+    return 1;
+  } else {
+    return 0;
+  }
 });
 console.log(persons); */
 
